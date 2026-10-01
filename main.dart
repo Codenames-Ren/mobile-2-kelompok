@@ -9,3 +9,5 @@ int tarifParkir{kendaraan tipeKendaaraan, int waktu} {
 
     int tarif = 0;
 }
+
+/* masih on progress. akan dilanjut lagi nanti*/
