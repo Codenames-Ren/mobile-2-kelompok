@@ -17,7 +17,7 @@ Actor atau pengguna yang akan menggunakan program ini antara lain :
 | BR-03 | Mobil: Rp5.000 jam pertama, Rp3.000 untuk setiap jam berikutnya.               |
 
 
-## Input dan Output
+## Input, Output dan Abstraction
 | Aspek       | Hasil Analisis                                                                 |
 |-------------|--------------------------------------------------------------------------------|
 | Input       | Jenis kendaraan (motorcycle (motor) / car (mobil)), durasi parkir dalam menit  |
