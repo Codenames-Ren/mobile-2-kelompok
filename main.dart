@@ -1,13 +1,27 @@
-enum kendaraan {motor, mobil}
+enum vehicle {motorcycle, car}
 
-int tarifParkir{kendaraan tipeKendaaraan, int waktu} {
-    int jam = waktu ~/ 60;
-    int menit = waktu % 60;
+int parkingRates(vehicle vehicleType, int time) {
+    int hours = time ~/ 60;
+    int minute = time % 60;
 
-    if (waktu > 0) {jam += 1}
-    if (waktu == 0) {jam = 1}
+    if (minute > 0) {hours += 1;}
+    if (hours == 0) {hours = 1;}
 
-    int tarif = 0;
+    int rate = 0;
+
+    switch (vehicleType) {
+        case vehicle.motorcycle:
+            rate = 2000 + (hours - 1) * 1000;
+        case vehicle.car:
+            rate = 5000 + (hours - 1) * 3000;
+    }
+
+    return rate;
 }
 
-/* masih on progress. akan dilanjut lagi nanti*/
+void main() {
+    print("Parkir motor 30 menit : Rp.${parkingRates(vehicle.motorcycle, 30)}");
+    print("Parkir motor 150 menit : Rp.${parkingRates(vehicle.motorcycle, 150)}");
+    print("Parkir mobil 60 menit : Rp.${parkingRates(vehicle.car, 60)}");
+    print("Parkir mobil 181 menit : Rp.${parkingRates(vehicle.car, 181)}");
+}
