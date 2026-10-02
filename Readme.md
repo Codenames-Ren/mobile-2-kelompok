@@ -62,9 +62,9 @@ parkingRates
                END
 
 ## Skenario
-| Kendaraan   | Durasi       | Expected Tarif    |
-|-------------|----------------------------------|
-| Motor       | 30 Menit     | Rp.2000           |
-| Motor       | 150 Menit    | Rp.4000           |
-| Mobil       | 60 Menit     | Rp. 5000          |
-| Mobil       | 181 Menit    | Rp. 14000         |
+| Kendaraan | Durasi    | Expected Tarif |
+|-----------|-----------|----------------|
+| Motor     | 30 Menit  | Rp.2000        |
+| Motor     | 150 Menit | Rp.4000        |
+| Mobil     | 60 Menit  | Rp.5000        |
+| Mobil     | 181 Menit | Rp.14000       |
