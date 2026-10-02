@@ -34,30 +34,30 @@ parkingRates
 
 ## Flowchart
 
-             START
-               │
-               ▼
+              START
+                │
+                ▼
     Input Jenis Kendaraan, 
     Durasi parkir (menit)
-               │
-               ▼
+                │
+                ▼
     Hitung durasi perjam. setiap sisa 
     menit dibulatkan minimal 1 jam
-               │                                             
-               ▼                                             
+                │                                             
+                ▼                                             
     ┌──────────────────┐   Mobil                              
     │ Jenis Kendaraan? ├──────────► Tarif 1 jam pertama Rp.5000 ─┐
     └───────────┬──────┘            tambahan Rp.3000 tiap jam    │
-        Motor  │                   berikutnya                    │
-               │                                                 |
-               ▼                                                 │
+        Motor   │                   berikutnya                   │
+                │                                                |
+                ▼                                                │
     Tarif 1 jam pertama Rp.2000                                  │
     tambahan Rp.1000 tiap jam                                    │
             berikutnya                                           │
-               │                                                 │
-               ▼                                                 │
+                │                                                │
+                ▼                                                │
     Tampilkan Tarif Parkir ◄─────────────────────────────────────┘
-               │            
-               ▼
-              END
+                │            
+                ▼
+               END
 
