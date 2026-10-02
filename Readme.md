@@ -31,3 +31,32 @@ parkingRates
     └── rate -> hitung tarif parkir.
          ├── motorcycle (motor) : 2000 untuk 1 jam pertama + tambahan 1000 untuk tiap jam berikutnya [BR-02]
          └── car (mobil) : 5000 untuk 1 jam pertama + tambahan 3000 untuk tiap jam berikutnya [BR-03]
+
+## Flowchart
+
+             START
+               │
+               ▼
+   Input Jenis Kendaraan, Durasi parkir (menit)
+               │
+               ▼
+    Hitung durasi perjam. setiap sisa 
+    menit dibulatkan minimal 1 jam
+               │                                             
+               ▼                                             
+   ┌──────────────────┐   Mobil                              
+   │ Jenis Kendaraan? ├──────────► Tarif 1 jam pertama Rp.5000 ─┐
+   └───────────┬──────┘            tambahan Rp.3000 tiap jam    │
+        Motor  │                   berikutnya                   │
+               │                                                |
+               ▼                                                │
+    Tarif 1 jam pertama Rp.2000                                 │
+    tambahan Rp.1000 tiap jam                                   │
+            berikutnya                                          │
+               │                                                │
+               ▼                                                │
+    Tampilkan Tarif Parkir ◄────────────────────────────────────┘
+               │            
+               ▼
+              END
+
