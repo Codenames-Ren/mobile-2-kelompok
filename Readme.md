@@ -25,12 +25,12 @@ Actor atau pengguna yang akan menggunakan program ini antara lain :
 | Abstraction | enum vehicle (motorcycle, car), vehicle type, time (minute & hours), rate      |
 
 ## Decomposition
-parkingRates
-    ├── vehicleType -> bedain jenis kendaraan antara motorcycle (motor) dan car (mobil) dari isi data enum
-    ├── time -> hitung durasi perjam. sisa menit dibulatkan keatas (1 jam) [BR-01]
-    └── rate -> hitung tarif parkir.
-         ├── motorcycle (motor) : 2000 untuk 1 jam pertama + tambahan 1000 untuk tiap jam berikutnya [BR-02]
-         └── car (mobil) : 5000 untuk 1 jam pertama + tambahan 3000 untuk tiap jam berikutnya [BR-03]
+    parkingRates
+        ├── vehicleType -> bedain jenis kendaraan antara motorcycle (motor) dan car (mobil) dari isi data enum
+        ├── time -> hitung durasi perjam. sisa menit dibulatkan keatas (1 jam) [BR-01]
+        └── rate -> hitung tarif parkir.
+            ├── motorcycle (motor) : 2000 untuk 1 jam pertama + tambahan 1000 untuk tiap jam berikutnya [BR-02]
+            └── car (mobil) : 5000 untuk 1 jam pertama + tambahan 3000 untuk tiap jam berikutnya [BR-03]
 
 ## Flowchart
 
